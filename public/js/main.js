@@ -91,6 +91,8 @@ formAppointment.addEventListener("submit", (e) => {
       },
     ];
     localStorage.setItem("userData", JSON.stringify(userData));
+    appointment.innerHTML = `${userData[0].civility} ${userData[0].lastName}, vous avez réservé un rendez-vous prévu le ${userData[0].dateAppointment}`;
+    rdvDiv.classList.toggle("none");
   }
 });
 
@@ -113,5 +115,3 @@ inputPhone.addEventListener("change", (e) => {
 inputDateAppointment.addEventListener("change", (e) => {
   dateAppointment = e.target.value;
 });
-
-console.log(userData[0]);

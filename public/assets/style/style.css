@@ -12,6 +12,7 @@
 }
 .navbar ul li a {
   color: black;
+  font-weight: 400;
 }
 .navbar img {
   width: 45px;
@@ -34,7 +35,6 @@
   text-align: center;
   font-size: 18px;
   padding-left: 5px;
-  font-weight: 800;
 }
 .navbar ul ul {
   display: flex;
@@ -43,10 +43,49 @@
 .navbar ul ul li {
   margin-left: 25px;
 }
+/* Styling for homepage  */
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  padding-top: 55px;
+}
+/* Styling for homepage logo */
+.homepage-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.homepage-logo .logo-flex-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.logo-flex-wrapper > div {
+  display: inline-flex;
+}
+.logo-flex-wrapper > div p {
+  font-size: 15px;
+  color: #763237;
+}
+.logo-flex-wrapper > p {
+  font-size: 14px;
+  color: #c09f80;
+}
+
+.homepage-logo .link {
+  color: black;
+}
+.homepage-logo .logo-ussg {
+  width: 190px;
+  height: auto;
+}
+.sinformer {
+  width: 140px;
+}
 
 /* styling for description section */
 .description-section {
-  padding-top: 135px;
+  padding-top: 85px;
 }
 .description-content {
   margin: 0 20%;
@@ -400,4 +439,87 @@ footer p a {
   border-color: #f05b6f;
   color: white;
   margin-top: 15px;
+}
+
+/* Styling for "Ouvrir un compte" page  */
+.open-account {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.open-account h1 {
+  padding-bottom: 10px;
+  padding: 10px 120px;
+  border-bottom: 1px solid black;
+}
+
+.open-account-section {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.open-account-section button,
+.open-account-section p {
+  margin-top: 20px;
+}
+.open-account-section button {
+  border: 1px solid;
+  font-size: 20px;
+  text-align: center;
+  width: 260px;
+  padding: 13px 15px;
+  border-radius: 25px;
+}
+
+.open-account-section div:first-child button {
+  background-color: #ed0210;
+  border-color: #ed0210;
+  color: white;
+  cursor: pointer;
+}
+
+.open-account-section div:first-child button a {
+  color: white;
+}
+.open-account-section div:last-child button {
+  background-color: #c09f80;
+  border-color: #c09f80;
+}
+
+.ouverture-classique {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.none {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#ouverture {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.animation-ouverture {
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.add-margin {
+  margin-right: 50px;
 }
