@@ -25,26 +25,34 @@
           <li class="navbar-logo">
             <a href="index.html">
               <img
-                src="./public/assets/img/sg.PNG"
+                src="/public/assets/img/sg.PNG"
                 alt="Logo de la Société générale"
               />
               <h2>L'avenir, c'est vous</h2></a
             >
           </li>
-          <ul>
+          <ul id="menu-web">
             <li><a href="#information">Notre partenariat</a></li>
             <li><a href="/pages/simulation.html">Simuler un prêt</a></li>
             <li><a href="/pages/ouvrirCompte.html">Ouvrir un compte</a></li>
           </ul>
-          <li>
+          <li class="univ-stras-logo">
             <a href="">
               <img
                 class="univ-stras"
-                src="./public/assets/img/Signature_Universite_Strasbourg_Unistra2_Transparent (2).png"
+                src="/public/assets/img/Signature_Universite_Strasbourg_Unistra2_Transparent (2).png"
                 alt="Logo de l'Université de Strasbourg "
               />
             </a>
           </li>
+          <ul id="menu-responsive">
+            <li class="ouvrir">
+              <img src="/public/assets/img/menu-open.png" />
+            </li>
+            <li class="fermer">
+              <img src="/public/assets/img/menu-close.png" />
+            </li>
+          </ul>
         </ul>
       </nav>
     </header>
@@ -120,10 +128,6 @@
         <div class="aide">
           <h2>Tout savoir sur les aides proposées par Société Générale</h2>
           <div class="aide-description-section">
-            <ul>
-              <li>Avantages</li>
-              <li>Caractéristiques</li>
-            </ul>
             <h4>Pourquoi faire une demande d'aide chez Société Générale ?</h4>
             <ul class="avantage-section">
               <li>
@@ -185,5 +189,7 @@
         <a href="#">Accessibilité : partiellement conforme</a>
       </p>
     </footer>
+    <!-- Handle responsive -->
+    <script src="/public/js/responsive.js"></script>
   </body>
 </html>

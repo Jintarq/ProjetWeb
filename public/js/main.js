@@ -12,7 +12,6 @@ const calcPret = (amount, duration) => {
   return Math.floor(amount / month);
 };
 // Each time the value of an input changes, amount value changes too to its value
-
 inputAmount.addEventListener("change", (e) => {
   amount = e.target.value;
   // Each time the value of an input changes, duration value changes too to its value
